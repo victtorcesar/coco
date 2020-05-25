@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../img/bg-coco.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 120px;
+    padding-left: 20px;
+
+}
+.content{
+    padding-top: 25px ;
+}
+.menu{
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    list-style-type: none;
+    float: right;
+}
+nav ul li{
+    color: #5b3f2b;
+    text-transform: uppercase;
+    padding-left: 10px;
+    display: inline-block;
+}
+nav ul li a{
+    color: #5b3f2b;
+    text-decoration: none;
+}
+.hover::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ff9100;
+    transition: width .3s;
+}
+.hover:hover::after{
+    width: 100%;
+    transition: width .3s;
+
+}
+.btn-nav{
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #ff9100;
+    border: none;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.btn-nav img{
+    cursor: pointer;
+    width: 15px;
+    float: left;
+    margin-left: -10px;
+    line-height: 20px;
+
+}
+.chamada img{
+    width: 600px;
+    position: relative;
+    display: flex;
+    float: right;
+    margin-top: -30px;
+}
+.arrow{
+    margin: 0 auto;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+}
+.arrow img{
+    width: 35px;
+    cursor: pointer;
+}
+.icons ul li{
+    border: 1px solid #5b3f2b;
+    border-radius: 2px;
+    width: 10px;
+    height: 10px;
+    margin-top: 2px;
+    list-style-type: none;
+    transition: .5s;
+}
+.ativo{
+    background-color: #5b3f2b;
+    position: absolute;
+    top: 50%;
+    left: 98%;
+}
+.desativado{
+    position: absolute;
+    top: 53%;
+    left: 98%;
+
+}
+.desativado2{
+    position: absolute;
+    top: 56%;
+    left: 98%;
+}
+.desativado3{
+    position: absolute;
+    background-color: transparent;
+    top: 59%;
+    left: 98%;
+}
+.desativado:hover,  .desativado2:hover, .desativado3:hover{
+    background-color: #5b3f2b;
+    cursor: pointer;
+}
+.ativo:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #5b3f2b;
+}
